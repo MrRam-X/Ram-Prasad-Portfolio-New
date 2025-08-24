@@ -164,7 +164,7 @@
               Ram
             </p>
             <p
-              class="text-4xl md:text-7xl font-[900] uppercase tracking-[0.8rem] mb-[6rem]"
+              class="text-4xl md:text-7xl font-[900] uppercase tracking-[0.8rem] mb-[4rem]"
             >
               Prasad<span class="text-brand-green">.</span>
             </p>
@@ -179,12 +179,12 @@
 
       <!-- Floating Resume Box (overlaps hero + skills) -->
       <div
-        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-5xl px-6"
+        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-4xl px-6"
       >
         <div
           class="bg-brand-dark text-center p-12 md:p-16 shadow-2xl"
         >
-          <div class="flex items-center justify-center mb-[5rem]">
+          <div class="flex items-center justify-center mb-[4rem]">
             <div
               class="flex items-center justify-center w-16 h-16 border-2 border-brand-green rounded-full text-brand-green text-3xl font-bold"
             >
@@ -192,7 +192,7 @@
             </div>
           </div>
           <p
-            class="text-gray-100 leading-[2.2] uppercase mb-8 max-w-xl mx-auto"
+            class="text-gray-100 leading-[2.2] uppercase mb-[4rem] max-w-xl mx-auto"
           >
             Fullstack Web Developer delivering high‑impact, scalable digital
             solutions. I transform ideas into polished products that captivate
@@ -201,7 +201,7 @@
           </p>
           <a
             href="#"
-            class="inline-block border-[1px] border-brand-green uppercase tracking-wide py-3 px-8 hover:bg-brand-green hover:text-white hover:bg-opacity-80 transition-colors font-thin"
+            class="inline-block border-[1px] border-brand-green uppercase tracking-wide py-3 px-8 mb-[4rem] hover:bg-brand-green hover:text-white hover:bg-opacity-80 transition-colors font-thin"
             >Download Resume</a
           >
         </div>
@@ -377,12 +377,8 @@
 
       <!-- START: New Combined Section (Portfolio + Experience) -->
       <section
-        class="relative"
-        style="
-          background-image: url('assets/images/mountain-bg.jpg');
-          background-repeat: no-repeat;
-          object-fit: cover;
-        "
+        class="relative bg-[url('assets/images/mountain-bg.jpg')] bg-cover bg-center bg-no-repeat"
+
       >
         <!-- This overlay provides the dark tint for the entire section -->
         <div class="absolute inset-0 bg-brand-dark bg-opacity-80"></div>
@@ -481,7 +477,7 @@
               ></div>
 
               <!-- Timeline Items Wrapper -->
-              <div class="space-y-12 mb-[20rem]">
+              <div class="space-y-12 mb-[30rem]">
                 <!-- Timeline Item 1 (Right Side) -->
                 <div class="reveal-fade md:flex md:justify-end relative">
                   <!-- Content Block -->
@@ -553,26 +549,26 @@
       <!-- Floating Contact Box -->
       <div
         id="contact"
-        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-6xl px-6"
+        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-5xl px-6"
       >
         <div
-          class="bg-brand-dark max-w-5xl mx-auto p-12 md:p-16 -mt-32 rounded-lg shadow-2xl reveal-fade"
+          class="bg-brand-dark max-w-5xl mx-auto p-12 md:p-16 -mt-32 shadow-2xl reveal-fade"
         >
           <!-- Two-column grid for content and form -->
-          <div class="grid md:grid-cols-2 gap-12 md:gap-16">
+          <div class="grid md:grid-cols-2 gap-12 md:gap-16 px-[6rem] py-[2rem]">
             <!-- Left Column: Contact Info -->
             <div class="text-center md:text-left">
-              <h2 class="text-3xl font-bold text-white mb-4 tracking-wider">
+              <h3 class="text-2xl text-white mb-[2rem] tracking-normal">
                 CONTACT
-              </h2>
-              <p class="text-gray-400 mb-8 leading-relaxed">
+              </h3>
+              <p class="font-thin text-sm text-white mb-8 leading-[2] tracking-widest">
                 I'm a paragraph. Click here to add your own text and edit me.
                 I'm a great place for you to tell a story and let your users
                 know a little more about you.
               </p>
-              <div class="space-y-2 text-gray-300 font-mono">
-                <p>info@mysite.com</p>
-                <p>Tel: 1-800-000-0000</p>
+              <div class="font-thin text-sm text-white mb-8 leading-[2] tracking-wide">
+                <p>ramprasadbaidya21@gmail.com</p>
+                <p>Mob: +91-6290338636</p>
               </div>
             </div>
 
@@ -582,59 +578,59 @@
                 <div>
                   <label
                     for="first-name"
-                    class="text-sm text-gray-400 font-mono"
+                    class="text-xs"
                     >First name *</label
                   >
                   <input
                     type="text"
                     id="first-name"
-                    class="w-full bg-white p-2.5 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
+                    class="w-full bg-white p-2 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
                   />
                 </div>
                 <div>
-                  <label for="last-name" class="text-sm text-gray-400 font-mono"
+                  <label for="last-name" class="text-xs"
                     >Last name *</label
                   >
                   <input
                     type="text"
                     id="last-name"
-                    class="w-full bg-white p-2.5 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
+                    class="w-full bg-white p-2 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
                   />
                 </div>
               </div>
               <div class="mb-4">
-                <label for="email" class="text-sm text-gray-400 font-mono"
+                <label for="email" class="text-xs"
                   >Email *</label
                 >
                 <input
                   type="email"
                   id="email"
-                  class="w-full bg-white p-2.5 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
+                  class="w-full bg-white p-2 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
                 />
               </div>
               <div class="mb-4">
-                <label for="phone" class="text-sm text-gray-400 font-mono"
+                <label for="phone" class="text-xs"
                   >Phone</label
                 >
                 <input
                   type="tel"
                   id="phone"
-                  class="w-full bg-white p-2.5 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
+                  class="w-full bg-white p-2 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
                 />
               </div>
               <div class="mb-6">
-                <label for="message" class="text-sm text-gray-400 font-mono"
+                <label for="message" class="text-xs"
                   >Message</label
                 >
                 <textarea
                   id="message"
                   rows="5"
-                  class="w-full bg-white p-2.5 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
+                  class="w-full bg-white p-2 mt-1 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-none"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="w-full bg-brand-green text-white font-bold py-3 hover:bg-opacity-90 transition-colors rounded-none"
+                class="w-full bg-brand-green bg-opacity-80 text-white text-sm font-thin py-2 hover:bg-opacity-90 transition-colors rounded-none"
               >
                 Send
               </button>
@@ -642,7 +638,7 @@
           </div>
 
           <!-- Social Icons (Below the grid) -->
-          <div class="mt-16 pt-8 border-t border-gray-700">
+          <div class="mt-16">
             <div class="flex justify-center space-x-6 text-xl text-gray-400">
               <a href="#" class="hover:text-white transition-colors"
                 ><i class="fab fa-linkedin-in"></i
@@ -663,7 +659,7 @@
 
       <!-- Empty section for parallax -->
       <section
-        class="min-h-[30rem] relative flex items-center parallax"
+        class="min-h-[35rem] relative flex items-center parallax"
         style="background-image: url('assets/images/laptop-bg-2.jpg')"
       >
         <!-- Overlay -->
@@ -681,7 +677,7 @@
           class="flex items-center justify-center w-8 h-8 border-2 border-brand-green rounded-full text-brand-green text-lg font-bold mr-4"
           >R</a
         >
-        <p>&copy; 2025 by Robert Caro.</p>
+        <p>&copy; 2025 by Ram Prasad Baidya.</p>
       </div>
     </footer>
 
