@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Caro - UX/UI Designer</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- ScrollReveal.js for Animations -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "brand-dark": "#2F3644",
+              "brand-light": "#4A5568",
+              "brand-green": "#05F26C",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .skill-bar-inner {
+        transition: width 1.5s ease-in-out;
+      }
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body class="bg-brand-light text-gray-200 font-custom">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    >
+      <nav class="container mx-auto px-6 py-4 flex justify-center items-center">
+        <!-- Logo -->
+        <a
+          href="#home"
+          class="flex items-center justify-center w-10 h-10 border-2 border-brand-green rounded-full text-brand-green text-xl font-bold mr-20"
+          >R</a
+        >
+
+        <!-- Desktop Nav -->
+        <div
+          class="hidden md:flex items-center space-x-8 font-custom"
+        >
+          <a
+            href="#home"
+            data-scroll-to="home"
+            class="nav-link tracking-widest uppercase text-sm text-gray-400 hover:text-brand-green transition-colors"
+            >Home</a
+          >
+          <a
+            href="#portfolio"
+            data-scroll-to="portfolio"
+            class="nav-link tracking-widest uppercase text-sm text-gray-400 hover:text-brand-green transition-colors"
+            >Portfolio</a
+          >
+          <a
+            href="#experience"
+            data-scroll-to="experience"
+            class="nav-link tracking-widest uppercase text-sm text-gray-400 hover:text-brand-green transition-colors"
+            >Experience</a
+          >
+          <a
+            href="#contact"
+            data-scroll-to="contact"
+            class="nav-link tracking-widest uppercase text-sm text-gray-400 hover:text-brand-green transition-colors"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-2xl z-[60] text-white"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="hidden fixed inset-0 bg-brand-dark z-50">
+        <div
+          class="flex flex-col items-center justify-center h-full space-y-10 font-mono"
+        >
+          <a
+            href="#home"
+            class="mobile-link text-2xl font-normal uppercase tracking-widest"
+            >Home</a
+          >
+          <a
+            href="#experience"
+            class="mobile-link text-2xl font-normal uppercase tracking-widest"
+            >Experience</a
+          >
+          <a
+            href="#portfolio"
+            class="mobile-link text-2xl font-normal uppercase tracking-widest"
+            >Portfolio</a
+          >
+          <a
+            href="#contact"
+            class="mobile-link text-2xl font-normal uppercase tracking-widest"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="min-h-screen relative flex items-center parallax"
+        style="
+          background-image: url('assets/images/anime-profile-background.jpeg');
+        "
+      >
+        <div class="absolute inset-0 bg-brand-light bg-opacity-70"></div>
+        <div class="container mx-auto px-6 relative z-10 flex justify-center">
+          <div class="max-w-xl">
+            <p
+              class="text-6xl md:text-8xl font-bold uppercase tracking-widest mb-5"
+            >
+              I<span class="text-brand-green">'</span>m
+            </p>
+            <h1
+              class="text-6xl md:text-8xl font-bold uppercase tracking-wider text-white mb-10"
+            >
+              Ram Prasad<br />Baidya<span class="text-brand-green">.</span>
+            </h1>
+            <p class="mt-4 text-lg tracking-widest uppercase">
+              Mobile & Web Developer
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Floating Resume Box -->
+      <div class="relative z-20 container mx-auto px-6">
+        <div
+          class="bg-brand-dark max-w-4xl mx-auto text-center p-12 md:p-16 -mt-40 md:-mt-32 rounded-lg shadow-2xl reveal-fade"
+        >
+          <div class="flex items-center justify-center mb-8">
+            <div
+              class="flex items-center justify-center w-16 h-16 border-2 border-brand-green rounded-full text-brand-green text-3xl font-bold"
+            >
+              R
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto uppercase">
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content.
+          </p>
+          <a
+            href="#"
+            class="inline-block border-2 border-brand-green text-brand-green uppercase tracking-widest py-3 px-8 hover:bg-brand-green hover:text-brand-dark transition-colors font-semibold"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Professional/Skills Section -->
+      <section
+        id="professional"
+        class="relative parallax -mt-[17rem] md:-mt-[16.5rem]"
+        style="background-image: url('assets/images/laptop-background.jpg')"
+      >
+        <!-- -mt-48 -->
+        <!-- This overlay provides the dark tint -->
+        <div class="absolute inset-0 bg-brand-dark bg-opacity-90"></div>
+
+        <!-- This container holds the content and has padding on the TOP to push content below the overlapping box -->
+        <div class="relative z-10 container mx-auto px-6 pt-48 pb-24">
+          <div class="text-center mb-16 mt-[10rem]">
+            <h2 class="text-4xl font-bold text-white">
+              <span class="text-gray-500">01</span> PROFESSIONAL
+            </h2>
+            <p class="uppercase tracking-widest text-gray-400 mt-2">
+              My Knowledge Level in Software
+            </p>
+          </div>
+          <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Skill Items -->
+            <div class="skill-item">
+              <div class="flex justify-between items-end mb-1">
+                <span class="uppercase text-sm font-semibold">WordPress</span
+                ><span class="text-sm text-gray-400">75%</span>
+              </div>
+              <div class="w-full bg-gray-600 h-2">
+                <div
+                  class="bg-brand-green h-2 skill-bar-inner"
+                  data-width="75%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between items-end mb-1">
+                <span class="uppercase text-sm font-semibold">Drupal</span
+                ><span class="text-sm text-gray-400">70%</span>
+              </div>
+              <div class="w-full bg-gray-600 h-2">
+                <div
+                  class="bg-brand-green h-2 skill-bar-inner"
+                  data-width="70%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between items-end mb-1">
+                <span class="uppercase text-sm font-semibold">Wix</span
+                ><span class="text-sm text-gray-400">95%</span>
+              </div>
+              <div class="w-full bg-gray-600 h-2">
+                <div
+                  class="bg-brand-green h-2 skill-bar-inner"
+                  data-width="95%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between items-end mb-1">
+                <span class="uppercase text-sm font-semibold">Photoshop</span
+                ><span class="text-sm text-gray-400">85%</span>
+              </div>
+              <div class="w-full bg-gray-600 h-2">
+                <div
+                  class="bg-brand-green h-2 skill-bar-inner"
+                  data-width="85%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between items-end mb-1">
+                <span class="uppercase text-sm font-semibold">Illustrator</span
+                ><span class="text-sm text-gray-400">80%</span>
+              </div>
+              <div class="w-full bg-gray-600 h-2">
+                <div
+                  class="bg-brand-green h-2 skill-bar-inner"
+                  data-width="80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between items-end mb-1">
+                <span class="uppercase text-sm font-semibold">Javascript</span
+                ><span class="text-sm text-gray-400">85%</span>
+              </div>
+              <div class="w-full bg-gray-600 h-2">
+                <div
+                  class="bg-brand-green h-2 skill-bar-inner"
+                  data-width="85%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between items-end mb-1">
+                <span class="uppercase text-sm font-semibold">HTML & CSS</span
+                ><span class="text-sm text-gray-400">80%</span>
+              </div>
+              <div class="w-full bg-gray-600 h-2">
+                <div
+                  class="bg-brand-green h-2 skill-bar-inner"
+                  data-width="80%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-24 bg-brand-light">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-white">
+              <span class="text-gray-500">02</span> PORTFOLIO
+            </h2>
+            <a
+              href="#"
+              class="uppercase tracking-widest text-gray-400 mt-2 group"
+              >My Latest Work. See More
+              <span class="group-hover:ml-2 transition-all duration-300"
+                >&gt;</span
+              ></a
+            >
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="group relative overflow-hidden rounded-lg">
+              <img
+                src="https://i.ibb.co/k2p86cf/project1.png"
+                alt="Project 1"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark bg-opacity-80 flex items-center justify-center"
+              >
+                <h3
+                  class="text-white text-xl font-bold uppercase tracking-widest"
+                >
+                  Project 01
+                </h3>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg">
+              <img
+                src="https://i.ibb.co/3Wf0G5j/project2.png"
+                alt="Project 2"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark bg-opacity-80 flex items-center justify-center"
+              >
+                <h3
+                  class="text-white text-xl font-bold uppercase tracking-widest"
+                >
+                  Project 02
+                </h3>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg">
+              <img
+                src="https://i.ibb.co/z5wQzNq/project3.png"
+                alt="Project 3"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark bg-opacity-80 flex items-center justify-center"
+              >
+                <h3
+                  class="text-white text-xl font-bold uppercase tracking-widest"
+                >
+                  Project 03
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section
+        id="experience"
+        class="relative parallax"
+        style="background-image: url('images/mountain-bg.jpg')"
+      >
+        <div class="absolute inset-0 bg-brand-dark bg-opacity-80"></div>
+        <div class="relative z-10 py-24 container mx-auto px-6">
+          <div class="text-center mb-20">
+            <h2 class="text-4xl font-bold text-white">
+              <span class="text-gray-500">03</span> EXPERIENCE
+            </h2>
+          </div>
+          <div class="relative max-w-4xl mx-auto">
+            <div
+              class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-brand-green bg-opacity-50 hidden md:block"
+            ></div>
+            <div class="space-y-16">
+              <!-- Timeline Items -->
+              <div class="timeline-item grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-right md:pr-16">
+                  <p class="text-brand-green font-semibold">2030-2033</p>
+                  <h3 class="text-2xl font-bold text-white mt-1">HOP!</h3>
+                </div>
+                <div class="relative md:pl-16">
+                  <div
+                    class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2 md:left-0 md:-translate-x-1/2 w-4 h-4 rounded-full bg-brand-green border-2 border-brand-dark"
+                  ></div>
+                  <h4 class="font-bold text-lg">Creative Design Lead</h4>
+                  <p class="text-gray-400 mt-2 text-sm">
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left md:pl-16 md:order-2">
+                  <p class="text-brand-green font-semibold">2025-2030</p>
+                  <h3 class="text-2xl font-bold text-white mt-1">WISBOOM</h3>
+                </div>
+                <div class="relative md:pr-16 md:text-right md:order-1">
+                  <div
+                    class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-1/2 w-4 h-4 rounded-full bg-brand-green border-2 border-brand-dark"
+                  ></div>
+                  <h4 class="font-bold text-lg">Associate Design Director</h4>
+                  <p class="text-gray-400 mt-2 text-sm">
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-right md:pr-16">
+                  <p class="text-brand-green font-semibold">2022-2025</p>
+                  <h3 class="text-2xl font-bold text-white mt-1">SNAP UP</h3>
+                </div>
+                <div class="relative md:pl-16">
+                  <div
+                    class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2 md:left-0 md:-translate-x-1/2 w-4 h-4 rounded-full bg-brand-green border-2 border-brand-dark"
+                  ></div>
+                  <h4 class="font-bold text-lg">Director of Design</h4>
+                  <p class="text-gray-400 mt-2 text-sm">
+                    I'm a paragraph. Click here to add your own text and edit
+                    me. It’s easy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Floating Contact Box -->
+      <div id="contact" class="relative z-20 container mx-auto px-6">
+        <div
+          class="bg-brand-dark max-w-4xl mx-auto p-12 md:p-16 -mt-32 rounded-lg shadow-2xl reveal-fade"
+        >
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">CONTACT</h2>
+            <p class="text-gray-400 mb-8">
+              I'm a paragraph. It's a great place for you to tell a story.
+            </p>
+          </div>
+          <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="first-name" class="text-sm text-gray-400"
+                  >First Name *</label
+                ><input
+                  type="text"
+                  id="first-name"
+                  class="w-full bg-brand-light p-3 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-brand-green rounded-md"
+                />
+              </div>
+              <div>
+                <label for="last-name" class="text-sm text-gray-400"
+                  >Last Name *</label
+                ><input
+                  type="text"
+                  id="last-name"
+                  class="w-full bg-brand-light p-3 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-brand-green rounded-md"
+                />
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="text-sm text-gray-400">Email *</label
+              ><input
+                type="email"
+                id="email"
+                class="w-full bg-brand-light p-3 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-brand-green rounded-md"
+              />
+            </div>
+            <div class="mb-8">
+              <label for="message" class="text-sm text-gray-400">Message</label
+              ><textarea
+                id="message"
+                rows="5"
+                class="w-full bg-brand-light p-3 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-brand-green rounded-md"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-brand-green text-brand-dark font-bold py-4 uppercase tracking-widest hover:bg-opacity-80 transition-colors rounded-md"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-light pt-48 pb-6">
+      <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+        <div class="flex justify-center space-x-6 text-xl mb-6">
+          <a href="#" class="hover:text-brand-green transition-colors"
+            ><i class="fab fa-linkedin-in"></i></a
+          ><a href="#" class="hover:text-brand-green transition-colors"
+            ><i class="fab fa-twitter"></i></a
+          ><a href="#" class="hover:text-brand-green transition-colors"
+            ><i class="fab fa-instagram"></i></a
+          ><a href="#" class="hover:text-brand-green transition-colors"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </div>
+        <a
+          href="#home"
+          class="flex items-center justify-center w-8 h-8 border-2 border-brand-green rounded-full text-brand-green text-lg font-bold mx-auto mb-4"
+          >R</a
+        >
+        <p>&copy; 2025 by Robert Caro.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
