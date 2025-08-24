@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robert Caro - UX/UI Designer</title>
+    <title>Ram Prasad - Full Stack Developer</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -142,7 +142,7 @@
       <!-- Hero Section -->
       <section
         id="home"
-        class="min-h-screen relative flex items-center parallax"
+        class="min-h-[40rem] md:min-h-screen relative flex items-center parallax"
         style="
           background-image: url('assets/images/anime-profile-background.jpeg');
         "
@@ -169,7 +169,7 @@
               Prasad<span class="text-brand-green">.</span>
             </p>
             <p
-              class="mt-4 text-2xl sm:text-center uppercase tracking-[0.4rem] mb-[6rem]"
+              class="mt-4 text-2xl sm:text-center uppercase tracking-[0.4rem] md:mb-[6rem]"
             >
               Full Stack Web Developer
             </p>
@@ -179,7 +179,7 @@
 
       <!-- Floating Resume Box (overlaps hero + skills) -->
       <div
-        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-4xl px-6"
+        class="md:absolute md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 md:z-20 w-full md:max-w-4xl md:px-6"
       >
         <div
           class="bg-brand-dark text-center p-12 md:p-16 shadow-2xl"
@@ -210,13 +210,13 @@
       <!-- Professional/Skills Section -->
       <section
         id="professional"
-        class="relative pt-48 pb-24 parallax"
+        class="relative md:pt-48 pb-24 parallax"
         style="background-image: url('assets/images/laptop-background.jpg')"
       >
         <div class="absolute inset-0 bg-brand-dark bg-opacity-90"></div>
 
         <div class="relative z-10 container mx-auto px-6">
-          <div class="text-center mb-16 pt-24 font-custom pt-[18rem]">
+          <div class="text-center mb-16 pt-24 font-custom md:pt-[18rem]">
             <h2
               class="text-2xl md:text-5xl font-[800] uppercase tracking-[0.4rem] md:tracking-[0.5rem] mb-5"
             >
@@ -387,7 +387,7 @@
         <div class="relative z-10">
           <!-- Portfolio Content -->
           <div id="portfolio" class="container mx-auto px-6pb-12 md:pb-24">
-            <div class="text-center mb-16 font-custom pt-[18rem]">
+            <div class="text-center mb-16 font-custom pt-24 md:pt-[18rem]">
               <h2
                 class="text-2xl md:text-5xl font-[800] uppercase tracking-[0.4rem] md:tracking-[0.5rem] mb-5"
               >
@@ -404,8 +404,8 @@
               >
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-              <div class="group relative overflow-hidden rounded-lg">
+            <div class="grid md:grid-cols-3 gap-2 md:gap-8">
+              <div class="group relative overflow-hidden">
                 <img
                   src="https://i.ibb.co/k2p86cf/project1.png"
                   alt="Project 1"
@@ -421,7 +421,7 @@
                   </h3>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg">
+              <div class="group relative overflow-hidden">
                 <img
                   src="https://i.ibb.co/3Wf0G5j/project2.png"
                   alt="Project 2"
@@ -437,7 +437,7 @@
                   </h3>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg">
+              <div class="group relative overflow-hidden">
                 <img
                   src="https://i.ibb.co/z5wQzNq/project3.png"
                   alt="Project 3"
@@ -459,7 +459,7 @@
           <!-- Experience Content -->
           <div
             id="experience"
-            class="container mx-auto px-6 pt-12 md:pt-24 pb-24"
+            class="container mx-auto px-6 pt-12 pt-24 md:pt-24 pb-24"
           >
             <div class="text-center font-custom mb-20">
               <h2
@@ -477,7 +477,7 @@
               ></div>
 
               <!-- Timeline Items Wrapper -->
-              <div class="space-y-12 mb-[30rem]">
+              <div class="space-y-12 mb-[10rem] md:mb-[30rem]">
                 <!-- Timeline Item 1 (Right Side) -->
                 <div class="reveal-fade md:flex md:justify-end relative">
                   <!-- Content Block -->
@@ -549,13 +549,13 @@
       <!-- Floating Contact Box -->
       <div
         id="contact"
-        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-5xl px-6"
+        class="md:absolute md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 md:z-20 w-full max-w-5xl md:px-6"
       >
         <div
-          class="bg-brand-dark max-w-5xl mx-auto p-12 md:p-16 -mt-32 shadow-2xl reveal-fade"
+          class="bg-brand-dark max-w-5xl mx-auto p-8 md:p-16 -mt-32 shadow-2xl reveal-fade"
         >
           <!-- Two-column grid for content and form -->
-          <div class="grid md:grid-cols-2 gap-12 md:gap-16 px-[6rem] py-[2rem]">
+          <div class="grid md:grid-cols-2 gap-12 md:gap-16 px-6 md:px-[3rem] py-[2rem]">
             <!-- Left Column: Contact Info -->
             <div class="text-center md:text-left">
               <h3 class="text-2xl text-white mb-[2rem] tracking-normal">
@@ -659,7 +659,7 @@
 
       <!-- Empty section for parallax -->
       <section
-        class="min-h-[35rem] relative flex items-center parallax"
+        class="md:min-h-[35rem] relative flex items-center parallax"
         style="background-image: url('assets/images/laptop-bg-2.jpg')"
       >
         <!-- Overlay -->
